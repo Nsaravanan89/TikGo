@@ -51,16 +51,13 @@ function renderBookingLayoutRows(dataArray) {
         rowElement.className = "booking-row-card";
 
         rowElement.innerHTML = `
-            
-            
-                <div class="mock-vertical-logo">T<br>R<br>A<br>I<br>N</div>
+                <div class="mock-vertical-logo">🚊</div>
                 <div class="train-title-block">
                     <span class="train-main-title">${booking.trainName}</span>
                     <span class="train-number-lbl">(${booking.trainNumber})</span>
                 </div>
             </div>
 
-            <!-- Center Grid Schedule: Route paths + Timestamps dates -->
             <div class="card-center-schedule">
                 <div class="route-path-lbl">${booking.route}</div>
                 <div class="date-timestamp-block">
@@ -69,7 +66,6 @@ function renderBookingLayoutRows(dataArray) {
                 </div>
             </div>
 
-            <!-- Right Grid Indicators: PNR values strings + System warning states -->
             <div class="card-right-status">
                 <div class="pnr-display-lbl">PNR : ${booking.pnr}</div>
                 <div class="status-badge-lbl">
