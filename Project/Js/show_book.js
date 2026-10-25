@@ -11,10 +11,19 @@ const historicalBookingsDataset = {
         }
     ],
     completed: [
+        {
+            trainName: "MS MAQ EXPRESS",
+            trainNumber: "16159",
+            route: "Tambaram(TBM) ➔ Truchirapalli(TPJ)",
+            travelDate: "11 sep 2026",
+            bookedDate: "10 sep 2026",
+            pnr: "483448384783",
+            status: "COMPLETED"
+        }
     ]
 };
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => { 
     renderBookingLayoutRows(historicalBookingsDataset.upcoming);
 });
 

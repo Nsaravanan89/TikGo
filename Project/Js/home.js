@@ -26,10 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const date = document.getElementById("journeyDate").value;
 
     if (!from || !to) {
-      alert("Please specify both departure and destination stations.");
-      return;
+      alert("Please enter the departure and destination stations.");
+    }else{
+      window.location.href = "book.html";
     }
-
-    window.location.href = "book.html";
   });
 });
