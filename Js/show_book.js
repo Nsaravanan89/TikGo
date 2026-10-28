@@ -7,7 +7,7 @@ const historicalBookingsDataset = {
             travelDate: "11 sep 2026",
             bookedDate: "10 sep 2026",
             pnr: "483448384783",
-            status: "CANCELLED"
+            status: "CONFORM"
         }
     ],
     completed: [

@@ -7,6 +7,7 @@
     --text-muted: #666666;
     --border-gray: #e6e9ed;
     --status-red: #ff3b30;
+    --status-green: #257b06;
 }
 
 * {
@@ -27,7 +28,7 @@ body {
 .top-utility-bar {
     background-color: #041222;
     color: #a2b4c7;
-    font-size: 11px;
+    font-size: 13px;
     display: flex;
     justify-content: space-between;
     padding: 6px 60px;
@@ -263,7 +264,7 @@ body {
 }
 
 .status-value-cancelled {
-    color: var(--status-red);
+    color: var(--status-green);
 }
 
 footer {

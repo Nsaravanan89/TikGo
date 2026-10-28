@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.top-bar {
+    background-color: #07162c;
+    color: #a0aec0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 120px;
+    font-size: 11px;
+}
+
+.top-left span {
+    letter-spacing: 0.5px;
+}
+
+.top-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.top-right span {
+    cursor: pointer;
+}
+
+.top-right span:hover {
+    color: #ffffff;
+}
+
+.lang-text {
+    color: #ffffff;
+}
+
+.top-right a {
+    color: #a0aec0;
+    text-decoration: none;
+}
+
+.top-right a:hover {
+    color: #ffffff;
+}
+
+.main-header {
+    background-color: #0c2340;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 120px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.train-icon {
+    width: 24px;
+    height: 24px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 3px;
+}
+
+.train-top {
+    width: 14px;
+    height: 2px;
+    background-color: #0c2340;
+    border-radius: 1px;
+    margin-bottom: 2px;
+}
+
+.train-window {
+    width: 16px;
+    height: 8px;
+    background-color: #0c2340;
+    border-radius: 2px;
+    margin-bottom: 2px;
+}
+
+.train-lights {
+    width: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.train-lights span {
+    width: 3px;
+    height: 3px;
+    background-color: #0c2340;
+    border-radius: 50%;
+}
+
+.logo-text {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.logo-orange {
+    color: #ffa500;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    opacity: 1;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-register, .btn-login {
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s, opacity 0.2s;
+}
+
+.btn-register {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn-register:hover {
+    border-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.btn-login {
+    background-color: #ffa500;
+    color: #ffffff;
+}
+
+.btn-login:hover {
+    background-color: #e69500;
+}
+
+.hero-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px 90px 20px;
+}
+
+.booking-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 16px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: 0.3px;
+}
+
+.ticket-icon {
+    font-size: 16px;
+}
+
+.card-body {
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #a0aec0;
+    outline: none;
+    background-color: #ffffff;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+}
+
+.date-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.date-input-wrapper input {
+    color: #333333;
+    padding-right: 40px;
+}
+
+.calendar-icon {
+    position: absolute;
+    right: 14px;
+    font-size: 14px;
+    color: #4a5568;
+    pointer-events: none;
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper select {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #333333;
+    outline: none;
+    background-color: #ffffff;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.select-wrapper::after {
+    content: "▼";
+    font-size: 10px;
+    color: #4a5568;
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.btn-search {
+    background-color: #ffa500;
+    color: #000000;
+    border: none;
+    padding: 14px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+    transition: background-color 0.2s;
+}
+
+.btn-search:hover {
+    background-color: #e69500;
+}
+
+.main-footer {
+    background-color: #07162c;
+    color: #718096;
+    padding: 45px 120px 25px 120px;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.brand-col {
+    flex: 2;
+    padding-right: 60px;
+}
+
+.brand-col h3 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.brand-col p {
+    max-width: 280px;
+}
+
+.footer-column h4 {
+    color: #ffffff;
+    margin-bottom: 16px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #718096;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-column ul li a:hover {
+    color: #ffffff;
+}
+
+.footer-column p {
+    margin-bottom: 8px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color: #4a5568;
+    font-size: 11px;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TikGo - Charts / Seat Vacancy</title>
+    <link rel="stylesheet" href="../css/chartvacany.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="top-left">
+            <span>Help: 14646 / 0755-6610661</span>
+        </div>
+        <div class="top-right">
+            <span>A-</span> <span>A</span> <span>A+</span>
+            <span class="lang-text">English</span>
+            <a href="#">Skip to main content</a>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <div class="logo-box">
+                <div class="train-icon">
+                    <div class="train-top"></div>
+                    <div class="train-lights"><span></span><span></span></div>
+                    <div class="train-window"></div>
+                </div>
+                <span class="logo-text">Tik<span class="logo-orange">Go</span></span>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="#">Trains</a>
+            <a href="#">Tourism</a>
+            <a href="#">Stays</a>
+            <a href="#">Holidays</a>
+            <a href="#">Offers</a>
+            <a href="#footer">Contact Us</a>
+        </nav>
+        <div class="auth-buttons">
+            <a href="register.html"><button class="btn-register">Register</button></a>
+            <a href="login.html"></a><button class="btn-login">Login</button></a>
+        </div>
+    </header>
+
+    <main class="hero-section">
+        <div class="vacancy-card">
+            <div class="card-header">
+                <span class="grid-icon">🌐</span> Charts / Seat Vacancy
+            </div>
+            <form id="vacancyForm" class="card-body">
+                <div class="form-group">
+                    <label for="trainNumber">Train Number</label>
+                    <input type="text" id="trainNumber" placeholder="e.g. 20601">
+                </div>
+
+                <div class="form-group">
+                    <label for="journeyDate">Journey Date</label>
+                    <div class="date-input-wrapper">
+                        <input type="text" id="journeyDate" placeholder="dd/mm/yyyy">
+                        <span class="calendar-icon">📅</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-get-status">Get Chart Status</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="main-footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-column brand-col">
+                <h3>Tik<span class="logo-orange">Go</span></h3>
+                <p>Train ticket booking made simple. Search, book and track your journey in one place.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Cancellation</a></li>
+                    <li><a href="#">Refund rules</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <p>support@tikgo.in</p>
+                <p>14646 (24 x 7)</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TikGo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../Js/chartvacany.js"></script>
+</body>
+</html>
