@@ -73,7 +73,7 @@ body {
     gap: 10px;
 }
 
-.train-icon {
+/* .train-icon {
     width: 24px;
     height: 24px;
     background-color: #ffffff;
@@ -84,7 +84,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     padding-top: 3px;
-}
+} */
 
 .train-top {
     width: 14px;
