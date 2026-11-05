@@ -16,5 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         alert('Searching partner restaurants and delivery outlets for PNR: ' + pnr);
+        pnrInput.value = " ";
     });
 });

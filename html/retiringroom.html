@@ -1,118 +1,178 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <title>TikGo - Station Retiring Room / Dormitory</title>
-    <link rel="stylesheet" href="../css/retiringroom.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="../css/retiringroom.css" />
+    <link rel="icon" href="../images/train.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
     <div class="top-bar">
-        <div class="top-left">
-            <span>Help: 14646 / 0755-6610661</span>
-        </div>
-        <div class="top-right">
-            <span>A-</span> <span>A</span> <span>A+</span>
-            <span class="lang-text">English</span>
-            <a href="#">Skip to main content</a>
-        </div>
+      <div class="top-left">
+        <div>📞 Help: 14646 / 0755-6610661</div>
+      </div>
+      <div>
+        <div>A- A A+ | English | Skip to main content</div>
+      </div>
     </div>
 
     <header class="main-header">
-        <div class="logo-container">
-            <div class="logo-box">
-                <div >
-                    <i class="fa fa-train" style="color: white;" aria-hidden="true"></i>
-                </div>
-                <span class="logo-text">Tik<span class="logo-orange">Go</span></span>
-            </div>
+      <div class="logo-container">
+        <div class="logo-box">
+          <div>
+            <i class="fa fa-train" style="color: white" aria-hidden="true"></i>
+          </div>
+          <span class="logo-text">Tik<span class="logo-orange">Go</span></span>
         </div>
         <nav class="nav-links">
-            <a href="../index.html">Home</a>
-            <a href="#">Trains</a>
-            <a href="#">Tourism</a>
-            <a href="#">Stays</a>
-            <a href="#">Holidays</a>
-            <a href="#">Offers</a>
-            <a href="#footer">Contact Us</a>
+          <a href="../index.html">Home</a>
+          <a href="book.html">Trains</a>
+          <a href="#footer">Contact Us</a>
         </nav>
-        <div class="auth-buttons">
-            <a href="register.html"><button class="btn-register">Register</button></a>
-            <a href="login.html"><button class="btn-login">Login</button></a>
-        </div>
+      </div>
+      <div class="auth-buttons">
+        <a href="register.html"
+          ><button class="btn-register">Register</button></a
+        >
+        <a href="login.html"><button class="btn-login">Login</button></a>
+      </div>
     </header>
 
     <main class="hero-section">
-        <div class="room-card">
-            <div class="card-header">
-                <span class="building-icon">🏢</span> Station Retiring Room / Dormitory
-            </div>
-            <form id="roomForm" class="card-body">
-                <div class="form-group">
-                    <label for="pnrNumber">Confirmed PNR Number</label>
-                    <input type="text" id="pnrNumber" placeholder="10-digit PNR required" maxlength="10">
-                </div>
-
-                <div class="form-group">
-                    <label for="stationSelect">Station</label>
-                    <div class="select-wrapper">
-                        <select id="stationSelect">
-                            <option value="MAS">CHENNAI CENTRAL - MAS</option>
-                            <option value="MDU">MADURAI JN - MDU</option>
-                            <option value="CBE">COIMBATORE JN - CBE</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="durationSelect">Duration</label>
-                    <div class="select-wrapper">
-                        <select id="durationSelect">
-                            <option value="12">12 Hours</option>
-                            <option value="24">24 Hours</option>
-                            <option value="48">48 Hours</option>
-                        </select>
-                    </div>
-                </div>
-
-                <button type="submit" class="btn-search-rooms">Search Available Rooms</button>
-            </form>
+      <div class="room-card">
+        <div class="card-header">
+          <span class="building-icon">🏢</span> Station Retiring Room /
+          Dormitory
         </div>
+        <form id="roomForm" class="card-body">
+          <div class="form-group">
+            <label for="pnrNumber">Confirmed PNR Number</label>
+            <input
+              type="text"
+              id="pnrNumber"
+              placeholder="10-digit PNR required"
+              maxlength="10"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="stationSelect">Station</label>
+            <div class="select-wrapper">
+              <select id="stationSelect">
+                <option value="MAS">CHENNAI CENTRAL - MAS</option>
+                <option value="MDU">MADURAI JN - MDU</option>
+                <option value="CBE">COIMBATORE JN - CBE</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="durationSelect">Duration</label>
+            <div class="select-wrapper">
+              <select id="durationSelect">
+                <option value="12">12 Hours</option>
+                <option value="24">24 Hours</option>
+                <option value="48">48 Hours</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-search-rooms">
+            Search Available Rooms
+          </button>
+        </form>
+      </div>
     </main>
 
+    <div class="booking-form-card">
+      <div class="info-banner">
+        <div class="info-header">
+          <span class="info-icon">🏢</span>
+          <h4>Room Rent & Availability Guidelines</h4>
+        </div>
+        <div class="info-grid">
+          <div class="info-item">
+            <strong>AC Retiring Room:</strong>
+            <span>₹800 / 12 Hrs | ₹1400 / 24 Hrs</span>
+          </div>
+          <div class="info-item">
+            <strong>Non-AC Room:</strong>
+            <span>₹500 / 12 Hrs | ₹900 / 24 Hrs</span>
+          </div>
+          <div class="info-item">
+            <strong>Dormitory Bed:</strong>
+            <span>₹250 / 12 Hrs | ₹450 / 24 Hrs</span>
+          </div>
+          <div class="info-item availability">
+            <strong>Status:</strong>
+            <span class="status-badge">Live Availability at Station</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="extra-rules-section">
+        <h5>⚠️ Important Booking Rules:</h5>
+        <ul>
+          <li>
+            Valid **Confirmed or RAC Ticket PNR** is mandatory for booking.
+          </li>
+          <li>A maximum stay of **48 hours** is permitted per passenger.</li>
+          <li>
+            Check-in allowed up to **2 hours prior** to train arrival time.
+          </li>
+        </ul>
+      </div>
+
+      <div class="tc-wrapper">
+        <label class="tc-label">
+          <input type="checkbox" id="agree-terms" required />
+          <span class="tc-text">
+            I accept the
+            <a href="#" class="policy-link">Retiring Room Terms of Service</a>.
+            I verify that my PNR is valid and understand that cancellation
+            charges apply as per IRCTC/Railway policies.
+          </span>
+        </label>
+      </div>
+    </div>
+
     <footer class="main-footer" id="footer">
-        <div class="footer-container">
-            <div class="footer-column brand-col">
-                <h3>Tik<span class="logo-orange">Go</span></h3>
-                <p>Train ticket booking made simple. Search, book and track your journey in one place.</p>
-            </div>
-            <div class="footer-column">
-                <h4>Help</h4>
-                <ul>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Cancellation</a></li>
-                    <li><a href="#">Refund rules</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Terms and conditions</a></li>
-                    <li><a href="#">Privacy policy</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h4>Contact</h4>
-                <p>support@tikgo.in</p>
-                <p>14646 (24 x 7)</p>
-            </div>
+      <div class="footer-container">
+        <div class="footer-column brand-col">
+          <h3>Tik<span class="logo-orange">Go</span></h3>
+          <p>
+            Train ticket booking made simple. Search, book and track your
+            journey in one place.
+          </p>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 TikGo. All rights reserved.</p>
+        <div class="footer-column">
+          <h4>Help</h4>
+          <ul>
+            <li>FAQs</li>
+            <li><a href="cancletrainticket.html">Cancellation</a></li>
+            <li><a href="refundstatus.html">Refund rules</a></li>
+          </ul>
         </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <p>About us</p>
+          <p>Privacy policy</p>
+          <a href="termandcondition.html">Terms and conditions</a>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <p>support@tikgo.in</p>
+          <p>+91 8682084657 (24 x 7)</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TikGo. All rights reserved.</p>
+      </div>
     </footer>
 
-    <script src="../Js/retiringroom.js"  loading="lazy"></script>
-</body>
+    <script src="../Js/retiringroom.js" loading="lazy"></script>
+  </body>
 </html>

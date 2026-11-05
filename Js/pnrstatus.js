@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const pnr = pnrInput.value.trim();
         if (pnr.length === 10) {
             alert('Checking PNR Status for: ' + pnr);
+            pnrInput.value = " ";
         } else {
             alert('Please enter a valid 10-digit PNR number.');
         }

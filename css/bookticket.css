@@ -71,18 +71,8 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-right: 20px;
 }
-
-/* .train-icon {
-    width: 24px;
-    height: 24px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 3px;
-} */
 
 .train-top {
     width: 14px;
@@ -358,13 +348,13 @@ body {
     margin-bottom: 10px;
 }
 
-.footer-column ul li a {
-    color: #718096;
+.footer-column a {
+    color: #0e99de;
     text-decoration: none;
     transition: color 0.2s;
 }
 
-.footer-column ul li a:hover {
+.footer-column a:hover {
     color: #ffffff;
 }
 

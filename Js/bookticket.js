@@ -3,6 +3,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
-    window.location.href = "show_book.html";
+    window.location.href = "book.html";
+  });
+
+  const districts = ["Chennai", "Coimbatore", "Madurai", "Trichy", "Salem"];
+  const datalistTag = document.getElementById("district-list");
+
+  districts.map((district) => {
+    const option = document.createElement("option");
+    option.value = district;
+
+    datalistTag.appendChild(option);
   });
 });

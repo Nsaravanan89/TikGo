@@ -20,5 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         alert('Searching rooms at ' + station + ' for ' + duration + ' hours under PNR: ' + pnr);
+        pnrInput.value = " ";
     });
 });

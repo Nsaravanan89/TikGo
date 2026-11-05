@@ -13,7 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
 body {
@@ -296,13 +296,13 @@ footer {
 
 .footer-col p {
     font-size: 13px;
-    line-height: 1.6;
+    line-height: 2;
     color: #b0bec5;
 }
 
 .footer-col a {
     display: block;
-    color: #b0bec5;
+    color: #0e99de;
     font-size: 13px;
     margin-bottom: 8px;
     text-decoration: none;

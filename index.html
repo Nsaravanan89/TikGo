@@ -3,7 +3,7 @@
   <head>
     <title>TikGo - Train Ticket Booking</title>
     <link rel="icon" href="images/train.jpg" />
-    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
@@ -19,16 +19,18 @@
         <div class="logo-section">
           <div class="logo-title"><i class="fa-solid fa-train"></i> TikGo</div>
           <nav class="nav-links">
-            <a href="#">Trains</a>
-            <a href="#">Tourism</a>
+            <a href="./html/book.html">Trains</a>
+            <!-- <a href="#">Tourism</a>
             <a href="#">Stays</a>
             <a href="#">Holidays</a>
-            <a href="#">Offers</a>
+            <a href="#">Offers</a> -->
             <a href="#footer">Contact Us</a>
           </nav>
         </div>
         <div class="auth-buttons">
-          <a href="html/register.html"><button class="btn-register">Register</button></a>
+          <a href="html/register.html"
+            ><button class="btn-register">Register</button></a
+          >
           <a href="html/login.html"><button class="btn-login">Login</button></a>
         </div>
       </div>
@@ -37,11 +39,11 @@
       <div class="hero-content">
         <h1>Tatkal opens at 10:00 AM</h1>
         <p>Save your passenger list once, book faster every time.</p>
-        <div class="carousel-dots">
+        <!-- <div class="carousel-dots">
           <span class="dot active"></span>
           <span class="dot"></span>
           <span class="dot"></span>
-        </div>
+        </div> -->
       </div>
     </section>
     <main class="main-dashboard">
@@ -51,12 +53,12 @@
             <button class="tab-btn active">
               <i class="fa-solid fa-ticket"></i> Book Ticket
             </button>
-            <button class="tab-btn">
+            <!-- <button class="tab-btn">
               <i class="fa-solid fa-magnifying-glass"></i> PNR Status
             </button>
             <button class="tab-btn">
               <i class="fa-solid fa-table"></i> Charts / Vacancy
-            </button>
+            </button> -->
           </div>
 
           <form id="bookingForm" class="booking-form">
@@ -66,9 +68,11 @@
                 <input
                   type="text"
                   id="fromStation"
+                  list="district-list"
                   placeholder="Departure station"
                   required
                 />
+                <datalist id="district-list"></datalist>
               </div>
               <button type="button" class="swap-btn" id="swapStations">
                 <i class="fa-solid fa-arrows-left-right"></i>
@@ -78,9 +82,11 @@
                 <input
                   type="text"
                   id="toStation"
+                  list="district-list"
                   placeholder="Destination station"
                   required
                 />
+                <datalist id="district-list"></datalist>
               </div>
             </div>
 
@@ -145,52 +151,52 @@
       <h2>Quick services</h2>
       <div class="services-grid">
         <a href="html/bookticket.html">
-        <div class="service-box">
-          <i class="fa-solid fa-ticket icon-orange"></i>
-          <p>Book Ticket</p>
-        </div>
+          <div class="service-box">
+            <i class="fa-solid fa-ticket icon-orange"></i>
+            <p>Book Ticket</p>
+          </div>
         </a>
         <a href="html/pnrstatus.html">
-        <div class="service-box">
-          <i class="fa-solid fa-magnifying-glass icon-orange"></i>
-          <p>PNR Status</p>
-        </div>
+          <div class="service-box">
+            <i class="fa-solid fa-magnifying-glass icon-orange"></i>
+            <p>PNR Status</p>
+          </div>
         </a>
         <a href="html/livetrainstatus.html">
-        <div class="service-box">
-          <i class="fa-solid fa-clock icon-orange"></i>
-          <p>Train Running Status</p>
-        </div>
+          <div class="service-box">
+            <i class="fa-solid fa-clock icon-orange"></i>
+            <p>Train Running Status</p>
+          </div>
         </a>
         <a href="html/cancletrainticket.html">
-        <div class="service-box">
-          <i class="fa-solid fa-circle-xmark icon-orange"></i>
-          <p>Cancel Ticket</p>
-        </div>
+          <div class="service-box">
+            <i class="fa-solid fa-circle-xmark icon-orange"></i>
+            <p>Cancel Ticket</p>
+          </div>
         </a>
         <a href="html/chartvacancy.html">
-        <div class="service-box">
-          <i class="fa-solid fa-table icon-orange"></i>
-          <p>Charts / Vacancy</p>
-        </div>
+          <div class="service-box">
+            <i class="fa-solid fa-table icon-orange"></i>
+            <p>Charts / Vacancy</p>
+          </div>
         </a>
         <a href="html/refundstatus.html">
-        <div class="service-box">
-          <i class="fa-solid fa-indian-rupee-sign icon-orange"></i>
-          <p>Refund Status</p>
-        </div>
+          <div class="service-box">
+            <i class="fa-solid fa-indian-rupee-sign icon-orange"></i>
+            <p>Refund Status</p>
+          </div>
         </a>
         <a href="html/retiringroom.html">
-        <div class="service-box">
-          <i class="fa-solid fa-hotel icon-orange"></i>
-          <p>Retiring Room</p>
-        </div>
+          <div class="service-box">
+            <i class="fa-solid fa-hotel icon-orange"></i>
+            <p>Retiring Room</p>
+          </div>
         </a>
         <a href="html/orderfood.html">
-        <div class="service-box">
-          <i class="fa-solid fa-mug-hot icon-orange"></i>
-          <p>Food on Train</p>
-        </div>
+          <div class="service-box">
+            <i class="fa-solid fa-mug-hot icon-orange"></i>
+            <p>Food on Train</p>
+          </div>
         </a>
       </div>
     </section>
@@ -205,25 +211,25 @@
         </div>
         <div class="footer-col">
           <h4>Help</h4>
-          <a href="#">FAQs</a>
-          <a href="#">Cancellation</a>
-          <a href="#">Refund rules</a>
+          <p href="#">FAQs</p>
+          <a href="./html/cancletrainticket.html">Cancellation</a>
+          <a href="./html/refundstatus.html">Refund rules</a>
         </div>
         <div class="footer-col">
           <h4>Company</h4>
-          <a href="#">About us</a>
-          <a href="#">Terms and conditions</a>
-          <a href="#">Privacy policy</a>
+          <p>About us</p>
+          <p>Privacy policy</p>
+          <a href="./html/termandcondition.html">Terms and conditions</a>
         </div>
         <div class="footer-col">
           <h4>Contact</h4>
           <p>support@tikgo.in</p>
-          <p>14646 (24 x 7)</p>
+          <p>+91 8682084657 (24 x 7)</p>
         </div>
       </div>
       <div class="footer-bottom">&copy; 2026 TikGo. All rights reserved.</div>
     </footer>
 
-    <script src="./Js/home.js"></script>
+    <script src="./Js/index.js"></script>
   </body>
 </html>

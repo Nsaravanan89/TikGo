@@ -9,13 +9,24 @@ document.addEventListener("DOMContentLoaded", () => {
     toStationInput.value = tempValue;
   });
 
-  const tabButtons = document.querySelectorAll(".tab-btn");
-  tabButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      tabButtons.forEach((btn) => btn.classList.remove("active"));
-      button.classList.add("active");
-    });
-  });
+const districts = ["Chennai", "Coimbatore", "Madurai", "Trichy", "Salem"];
+const datalistTag = document.getElementById("district-list");
+
+districts.map((district) => {
+    const option = document.createElement("option");
+        option.value = district; 
+    
+    datalistTag.appendChild(option);
+});
+
+  
+  // const tabButtons = document.querySelectorAll(".tab-btn");
+  // tabButtons.forEach((button) => {
+  //   button.addEventListener("click", () => {
+  //     tabButtons.forEach((btn) => btn.classList.remove("active"));
+  //     button.classList.add("active");
+  //   });
+  // });
 
   const bookingForm = document.getElementById("bookingForm");
   bookingForm.addEventListener("submit", (event) => {
@@ -27,8 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!from || !to) {
       alert("Please enter the departure and destination stations.");
-    }else{
-      window.location.href = "book.html";
+    } else {
+      window.location.href = "./html/book.html";
     }
   });
 });
+

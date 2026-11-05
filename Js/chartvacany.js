@@ -23,5 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         alert('Fetching chart status for train: ' + train + ' on date: ' + date);
+        trainInput.value = " ";
+        dateInput.value = " ";
     });
 });

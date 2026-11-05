@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const value = trainInput.value.trim();
         if (value) {
             alert('Fetching running status for: ' + value);
+            trainInput.value = " ";
         } else {
             alert('Please enter a valid train number or name.');
         }
